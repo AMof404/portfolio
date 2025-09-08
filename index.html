@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="title-container">
+                <h1 class="hero-title">ADAM MOFFAT</h1>
+                <div class="title-underline"></div>
+            </div>
+            <p class="hero-subtitle">Building applications that are <span class="typing-text"></span></p>
+            <div class="hero-cta">
+                <button class="magnetic-btn primary-btn" onclick="scrollToSection('projects')">
+                    <span class="btn-text">VIEW PROJECTS</span>
+                </button>
+                <button class="magnetic-btn secondary-btn" onclick="scrollToSection('contact')">
+                    <span class="btn-text">CONTACT</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="title-underline"></div>
+            
+        </div>
+        
+        <div class="projects-scroll-container">
+            <button class="nav-arrow nav-arrow-left" id="prevProject">
+                <span>‹</span>
+            </button>
+            
+            <div class="projects-track">
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('focus_app.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <!--<a href="#" class="project-link live-demo">
+                                        <span>Live Demo</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Windows App</div>
+                            <div class="project-number">01</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Focus Tracker</h3>
+                            <div class="project-category">Windows App</div>
+                        </div>
+                        <p>A Windows app that allows you to track your focus time, health, and productivity.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">⏱️</div>
+                                <span>Stopwatch & Countdown</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🧠</div>
+                                <span>Focus Statistics</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">❤️</div>
+                                <span>Health Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('buzzer.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <a href="https://amof404.github.io/buzzer/" class="project-link live-demo">
+                                        <span>Live Website</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <!--<a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Web Application</div>
+                            <div class="project-number">02</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Game Show Buzzer System</h3>
+                            <div class="project-category">Web-Based</div>
+                        </div>
+                        <p>A web-based game show buzzer system that allows a host to create rooms and players to buzz in and answer questions.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">🔥</div>
+                                <span>Live Results</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔑</div>
+                                <span>Room Code Generation</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🎨</div>
+                                <span>Simple UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('new_tab.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <!--<a href="#" class="project-link live-demo">
+                                        <span>Live Demo</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Web Extension</div>
+                            <div class="project-number">03</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>New Tab Customizer</h3>
+                            <div class="project-category">Extension</div>
+                        </div>
+                        <p>A web extension that allows you to customize your new tab page with your own search engine, background, and bookmarks.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">🔍</div>
+                                <span>Custom Search Engine</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🖼️</div>
+                                <span>Custom Background</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔖</div>
+                                <span>Custom Bookmarks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('temple.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <a href="https://amof404.github.io/temple/" class="project-link live-demo">
+                                        <span>Live Website</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <!--<a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Website</div>
+                            <div class="project-number">04</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Temple Tracker</h3>
+                            <div class="project-category">Web-Based</div>
+                        </div>
+                        <p>A web-based temple timelapse that allows you to view a timelapse of the temples of The Church of Jesus Christ of Latter-day Saints that have been built over time.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">Canvas</span>
+                            <span class="tech-tag">Web Audio</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">🗺️</div>
+                                <span>Map Timelapse</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔍</div>
+                                <span>Filterable List</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔄</div>
+                                <span>Dyanamic Elements</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('portfolio.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <!--<a href="#" class="project-link live-demo">
+                                        <span>Live Demo</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Website</div>
+                            <div class="project-number">05</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Portfolio</h3>
+                            <div class="project-category">Web-Based</div>
+                        </div>
+                        <p>The portfolio you're looking at right now! Built with HTML, CSS, and JavaScript.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">WebGL</span>
+                            <span class="tech-tag">GSAP</span>
+                            <span class="tech-tag">Canvas</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">🎨</div>
+                                <span>Simple UI</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">✨</div>
+                                <span>Particle Effects</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔤</div>
+                                <span>Typing Animation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('wordle.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <a href="https://amof404.github.io/word/" class=project-link live-demo">
+                                        <span>Live Website</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <!--<a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Website</div>
+                            <div class="project-number">06</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Wordle Solver and Five Letter Word Searcher</h3>
+                            <div class="project-category">Web-Based</div>
+                        </div>
+                        <p>A web-based Wordle solver and five letter word searcher with an indicator that lets you know if the word has been used before.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Swagger</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">🔍</div>
+                                <span>Wordle Solver Algorithm</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">📚</div>
+                                <span>List of Five Letter Words</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">📊</div>
+                                <span>Data Analysis of Five Letter Words</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-preview">
+                        <div class="project-image" style="background-image: url('space.png'); background-size: cover; background-position: center;">
+                            <div class="image-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link live-demo">
+                                        <span>Live Website</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>
+                                    <!--<a href="#" class="project-link source-code">
+                                        <span>Source Code</span>
+                                        <div class="link-arrow">→</div>
+                                    </a>-->
+                                </div>
+                            </div>
+                            <div class="project-badge">Website</div>
+                            <div class="project-number">07</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Astronomy Picture of the Day</h3>
+                            <div class="project-category">Web-Based</div>
+                        </div>
+                        <p>A web-based daily astronomy photo viewer that allows you to view the daily astronomy photo from NASA.</p>
+                        <!--<div class="project-tech">
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Swagger</span>
+                        </div>-->
+                        <div class="project-features">
+                            <div class="feature">
+                                <div class="feature-icon">🔗</div>
+                                <span>NASA API Integration</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔍</div>
+                                <span>Date Search</span>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">📝</div>
+                                <span>Paragraph About the Photo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="nav-arrow nav-arrow-right" id="nextProject">
+                <span>›</span>
+            </button>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="indicator-dots">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+                <div class="dot" data-index="4"></div>
+                <div class="dot" data-index="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>CONTACT</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card" data-tilt>
+                    <div class="contact-action" aria-label="Email address image">
+                        <div class="email-row">
+                            <div class="email-image-wrapper">
+                                <img id="emailImage" class="email-image" alt="Email address" />
+                            </div>
+                            <button id="copyEmailBtn" class="copy-email-btn" type="button" aria-label="Copy email to clipboard">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--<div class="contact-card" data-tilt>
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally</p>
+                    <div class="contact-action">
+                        <a href="#" class="contact-btn">Connect</a>
+                    </div>
+                </div>-->
+                
+                <div class="contact-card" data-tilt>
+                    <div class="contact-action">
+                        <a href="https://github.com/amof404" class="contact-btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
